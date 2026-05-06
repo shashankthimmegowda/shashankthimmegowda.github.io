@@ -1,49 +1,56 @@
 {
-  "_instructions": "Add your education and certifications here.",
   "sectionTitle": "Education & Certifications",
   "certificationsTitle": "Certifications",
   "education": [
     {
-      "degree": "Master’s",
-      "school": "University of Massachusetts Dartmouth, MA",
-      "institution": "University of Massachusetts Dartmouth, MA",
+      "degree": "Master's in Data Science",
+      "school": "University of Massachusetts Dartmouth",
       "period": "Sep 2023 – May 2025",
-      "details": "",
-      "description": ""
+      "details": "Graduate studies in machine learning, statistical modeling, and large-scale data engineering."
     },
     {
-      "degree": "Bachelors",
+      "degree": "Bachelor's in Electronics & Communication Engineering",
       "school": "Visvesvaraya Technological University",
-      "institution": "Visvesvaraya Technological University",
       "period": "Aug 2015 – May 2019",
-      "details": "",
-      "description": ""
+      "details": ""
     }
   ],
   "certifications": [
     {
-      "name": "Snowflake SnowPro Advanced: Architect",
-      "issuer": "Snowflake"
+      "name": "SnowPro Advanced: Architect",
+      "issuer": "Snowflake",
+      "icon": "fas fa-snowflake",
+      "color": "#29D9C2"
     },
     {
       "name": "SnowPro Advanced: Data Engineer",
-      "issuer": "Snowflake"
+      "issuer": "Snowflake",
+      "icon": "fas fa-snowflake",
+      "color": "#29D9C2"
     },
     {
       "name": "SnowPro Specialty: Gen AI",
-      "issuer": "Snowflake"
+      "issuer": "Snowflake",
+      "icon": "fas fa-snowflake",
+      "color": "#29D9C2"
     },
     {
       "name": "SnowPro Core",
-      "issuer": "Snowflake"
+      "issuer": "Snowflake",
+      "icon": "fas fa-snowflake",
+      "color": "#29D9C2"
     },
     {
-      "name": "DBT Fundamentals",
-      "issuer": "dbt Labs"
+      "name": "dbt Fundamentals",
+      "issuer": "dbt Labs",
+      "icon": "fas fa-layer-group",
+      "color": "#FF694A"
     },
     {
       "name": "Azure Data Fundamentals",
-      "issuer": "Microsoft"
+      "issuer": "Microsoft",
+      "icon": "fab fa-microsoft",
+      "color": "#0078D4"
     }
   ]
 }

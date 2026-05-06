@@ -3,53 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Professional Portfolio" />
-    <meta name="author" content="" />
-    <meta name="keywords" content="" />
-    <title>Portfolio</title>
+    <meta name="description" content="Shashank Thimmegowda — Snowflake Data Engineer with 5+ years building ELT pipelines, dbt models, and Airflow orchestration at enterprise scale." />
+    <meta name="author" content="Shashank Thimmegowda" />
+    <meta name="keywords" content="Snowflake Data Engineer, dbt, Apache Airflow, Fivetran, ELT Pipeline, Data Engineering, SnowPro Certified" />
+    <meta property="og:title" content="Shashank Thimmegowda | Snowflake Data Engineer" />
+    <meta property="og:description" content="5+ years designing ELT pipelines on Snowflake. SnowPro Advanced Architect & Data Engineer certified." />
+    <title>Shashank Thimmegowda | Snowflake Data Engineer</title>
+
+    <!-- Google Fonts: Syne (display) + DM Sans (body) + JetBrains Mono (code) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
   </head>
   <body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
       <div class="container">
         <div class="nav-brand">
-          <a href="#home"></a>
+          <a href="#home" class="brand-mark"></a>
         </div>
-        <button class="nav-toggle" id="navToggle">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
           <span></span>
           <span></span>
           <span></span>
         </button>
         <ul class="nav-menu" id="navMenu">
-          <!-- Navigation items will be loaded dynamically -->
+          <!-- Populated by JS -->
         </ul>
       </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+      <div class="hero-bg-aurora"></div>
+      <div class="hero-bg-grid"></div>
       <div class="container">
         <div class="hero-content">
+          <p class="hero-greeting" id="heroGreeting"></p>
           <h1 class="hero-title">
-            <span id="heroGreeting"></span> <span class="highlight" id="heroName"></span>
+            <span class="hero-name" id="heroName"></span>
           </h1>
-          <h2 class="hero-subtitle" id="heroTitle"></h2>
+          <div class="hero-role-wrap">
+            <span class="hero-role-line"></span>
+            <h2 class="hero-subtitle" id="heroTitle"></h2>
+            <span class="hero-role-line"></span>
+          </div>
           <p class="hero-description" id="heroSummary"></p>
-          <div class="hero-highlights" id="heroHighlights">
-            <!-- Highlights will be loaded dynamically -->
-          </div>
-          <div class="hero-cta" id="heroCTA">
-            <!-- CTA buttons will be loaded dynamically -->
-          </div>
-          <div class="social-links" id="heroSocial">
-            <!-- Social links will be loaded dynamically -->
-          </div>
+          <div class="hero-highlights" id="heroHighlights"></div>
+          <div class="hero-cta" id="heroCTA"></div>
+          <div class="social-links" id="heroSocial"></div>
         </div>
+      </div>
+      <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <i class="fas fa-chevron-down"></i>
       </div>
     </section>
 
@@ -58,12 +74,8 @@
       <div class="container">
         <h2 class="section-title"></h2>
         <div class="about-content">
-          <div class="about-text" id="aboutText">
-            <!-- Paragraphs will be loaded dynamically -->
-          </div>
-          <div class="about-stats" id="aboutStats">
-            <!-- Statistics will be loaded dynamically -->
-          </div>
+          <div class="about-text" id="aboutText"></div>
+          <div class="about-stats" id="aboutStats"></div>
         </div>
       </div>
     </section>
@@ -72,9 +84,7 @@
     <section id="experience" class="experience">
       <div class="container">
         <h2 class="section-title"></h2>
-        <div class="timeline" id="experienceTimeline">
-          <!-- Experience items will be loaded dynamically -->
-        </div>
+        <div class="timeline" id="experienceTimeline"></div>
       </div>
     </section>
 
@@ -82,9 +92,7 @@
     <section id="skills" class="skills">
       <div class="container">
         <h2 class="section-title"></h2>
-        <div class="skills-grid" id="skillsGrid">
-          <!-- Skills will be loaded dynamically -->
-        </div>
+        <div class="skills-grid" id="skillsGrid"></div>
       </div>
     </section>
 
@@ -92,9 +100,7 @@
     <section id="projects" class="projects">
       <div class="container">
         <h2 class="section-title"></h2>
-        <div class="projects-grid" id="projectsGrid">
-          <!-- Projects will be loaded dynamically -->
-        </div>
+        <div class="projects-grid" id="projectsGrid"></div>
       </div>
     </section>
 
@@ -103,14 +109,10 @@
       <div class="container">
         <h2 class="section-title"></h2>
         <div class="education-content">
-          <div class="education-grid" id="educationGrid">
-            <!-- Education items will be loaded dynamically -->
-          </div>
+          <div class="education-grid" id="educationGrid"></div>
           <div class="certifications">
-            <h3></h3>
-            <div class="cert-grid" id="certGrid">
-              <!-- Certifications will be loaded dynamically -->
-            </div>
+            <h3 class="cert-section-title"></h3>
+            <div class="cert-grid" id="certGrid"></div>
           </div>
         </div>
       </div>
@@ -120,13 +122,10 @@
     <section id="contact" class="contact">
       <div class="container">
         <h2 class="section-title"></h2>
+        <p class="contact-intro" id="contactIntro"></p>
         <div class="contact-content">
-          <div class="contact-info" id="contactInfo">
-            <!-- Contact info will be loaded dynamically -->
-          </div>
-          <div class="contact-form-container" id="contactFormContainer">
-            <!-- Contact form will be loaded dynamically -->
-          </div>
+          <div class="contact-info" id="contactInfo"></div>
+          <div class="contact-form-container" id="contactFormContainer"></div>
         </div>
       </div>
     </section>
@@ -135,11 +134,14 @@
     <footer class="footer">
       <div class="container">
         <p id="footerCopyright"></p>
-        <div class="footer-links" id="footerLinks">
-          <!-- Footer links will be loaded dynamically -->
-        </div>
+        <div class="footer-links" id="footerLinks"></div>
       </div>
     </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="assets/js/main.js"></script>
   </body>

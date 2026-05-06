@@ -1,14 +1,11 @@
 {
-  "_instructions": "Footer content.",
   "copyright": {
     "text": "All rights reserved.",
-    "name": "SHASHANK THIMMEGOWDA",
+    "name": "Shashank Thimmegowda",
     "year": 2026
   },
   "links": [
-    {
-      "text": "LinkedIn",
-      "url": "https://www.linkedin.com/in/shashank-thimmegowda-97/"
-    }
+    { "text": "LinkedIn", "url": "https://www.linkedin.com/in/shashank-thimmegowda-97/" },
+    { "text": "GitHub", "url": "https://github.com/shashankthimmegowda" }
   ]
 }

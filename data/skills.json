@@ -1,59 +1,35 @@
 {
-  "_instructions": "Organize your skills into categories. Each category has a name, icon, and list of skills.",
-  "_iconHelp": "Use Font Awesome icons (https://fontawesome.com/icons).",
   "sectionTitle": "Skills & Technologies",
   "categories": [
     {
-      "category": "Programming Languages",
+      "category": "Cloud & Data Warehousing",
+      "icon": "fas fa-cloud",
+      "skills": ["Snowflake", "AWS S3", "Azure Blob Storage", "Azure Data Lake", "Snowpipe", "Dynamic Tables", "Zero-Copy Cloning"]
+    },
+    {
+      "category": "Data Engineering & Orchestration",
+      "icon": "fas fa-project-diagram",
+      "skills": ["Apache Airflow (MWAA)", "Fivetran", "Streams & Tasks", "Snowpipe Auto-Ingest", "ELT / ETL Pipelines", "CI/CD Pipelines"]
+    },
+    {
+      "category": "Transformation & Modeling",
+      "icon": "fas fa-layer-group",
+      "skills": ["dbt (Data Build Tool)", "Medallion Architecture", "Incremental Models", "SCD Type 2 Snapshots", "dbt Semantic Layer", "Jinja Macros", "Data Testing"]
+    },
+    {
+      "category": "Languages & Frameworks",
       "icon": "fas fa-code",
-      "skills": [
-        "Python",
-        "SQL"
-      ]
+      "skills": ["Python", "SQL", "Jinja", "Streamlit", "Pandas", "Jupyter Notebook"]
     },
     {
-      "category": "Frameworks & Libraries",
-      "icon": "fas fa-toolbox",
-      "skills": [
-        "DBT",
-        "Streamlit",
-        "Jinja"
-      ]
+      "category": "Architecture & Governance",
+      "icon": "fas fa-sitemap",
+      "skills": ["Data Modeling", "Master Data Management", "Data Governance", "Semantic Layer", "Performance Tuning", "Cost Governance", "Multi-Region Architecture"]
     },
     {
-      "category": "Tools & Platforms",
-      "icon": "fas fa-wrench",
-      "skills": [
-        "Fivetran",
-        "Airflow",
-        "Snowflake",
-        "Azure",
-        "AWS",
-        "Jupyter Notebook",
-        "Postman",
-        "Git",
-        "Jira",
-        "Snowpipe",
-        "S3",
-        "Azure Blob Storage"
-      ]
-    },
-    {
-      "category": "Technical Skills",
-      "icon": "fas fa-laptop-code",
-      "skills": [
-        "ETL/ELT",
-        "Data Pipelines",
-        "Data Warehousing",
-        "Medallion Architecture",
-        "Data Modeling",
-        "SCD Tracking",
-        "Semantic Layer",
-        "Master Data Management",
-        "Data Governance",
-        "Cost Governance",
-        "Performance Tuning"
-      ]
+      "category": "DevOps & Tools",
+      "icon": "fas fa-tools",
+      "skills": ["Git", "Docker", "Postman", "Jira", "Snowflake Query Profiler"]
     }
   ]
 }

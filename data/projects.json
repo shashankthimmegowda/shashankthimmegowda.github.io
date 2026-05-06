@@ -1,62 +1,53 @@
 {
-  "_instructions": "Add your projects here. Each project should showcase your work.",
   "sectionTitle": "Featured Projects",
   "projects": [
     {
-      "title": "streamlit_mcp_cortex",
-      "description": "Streamlit app powered by Snowflake Cortex AI and MCP (Model Context Protocol) for natural language querying and AI-driven analytics directly in Snowflake. Stack: Python · Streamlit · Snowflake Cortex · MCP",
-      "technologies": [
-        "Python"
-      ],
-      "icon": "fas fa-project-diagram",
-      "github": "https://github.com/shashankthimmegowda/streamlit_mcp_cortex",
-      "demo": "https://github.com/shashankthimmegowda/streamlit_mcp_cortex"
+      "title": "Cortex AI + MCP Analytics App",
+      "description": "Natural language analytics powered by Snowflake Cortex AI and the Model Context Protocol. Ask questions in plain English and get SQL-backed answers directly from your Snowflake warehouse — no query writing required.",
+      "technologies": ["Python", "Streamlit", "Snowflake Cortex", "MCP", "SQL"],
+      "icon": "fas fa-robot",
+      "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+      "github": "https://github.com/shashankthimmegowda/streamlit_mcp_cortex"
     },
     {
-      "title": "elt-pipeline-dbt-snowflake-airflow",
-      "description": "End-to-end ELT pipeline with Apache Airflow for orchestration, dbt (Medallion architecture) for SQL transformations, and Snowflake as the cloud data warehouse. Features incremental models, SCD Type 2 snapshots, and automated scheduling. Stack: Python · dbt · Airflow · Snowflake · SQL",
-      "technologies": [
-        "HTML",
-        "Python",
-        "Dockerfile"
-      ],
-      "icon": "fas fa-brain",
-      "github": "https://github.com/shashankthimmegowda/elt-pipeline-dbt-snowflake-airflow",
-      "demo": "https://github.com/shashankthimmegowda/elt-pipeline-dbt-snowflake-airflow"
+      "title": "ELT Pipeline: dbt + Snowflake + Airflow",
+      "description": "Production-grade ELT pipeline with Apache Airflow orchestration, dbt Medallion architecture transformations, and Snowflake warehousing. Features incremental models, SCD Type 2 snapshots, and automated daily scheduling via Docker-based Airflow.",
+      "technologies": ["Python", "dbt", "Apache Airflow", "Snowflake", "SQL", "Docker"],
+      "icon": "fas fa-stream",
+      "gradient": "linear-gradient(135deg, #0ea5e9 0%, #0891b2 100%)",
+      "github": "https://github.com/shashankthimmegowda/elt-pipeline-dbt-snowflake-airflow"
     },
     {
-      "title": "Data_Profiler_App",
-      "description": "Native Streamlit app for interactive data profiling and exploration within Snowflake — schema inspection, column statistics, null analysis, and data quality checks. Stack: Python · Streamlit · Snowflake",
-      "technologies": [
-        "Python"
-      ],
-      "icon": "fas fa-project-diagram",
-      "github": "https://github.com/shashankthimmegowda/Data_Profiler_App",
-      "demo": "https://github.com/shashankthimmegowda/Data_Profiler_App"
+      "title": "Snowflake Data Profiler",
+      "description": "Native Streamlit app for interactive data profiling within Snowflake. Schema inspection, column statistics, null analysis, and data quality checks — all running inside Snowflake so data never leaves the warehouse.",
+      "technologies": ["Python", "Streamlit", "Snowflake", "SQL"],
+      "icon": "fas fa-chart-bar",
+      "gradient": "linear-gradient(135deg, #10b981 0%, #059669 100%)",
+      "github": "https://github.com/shashankthimmegowda/Data_Profiler_App"
     },
     {
-      "title": "contribution-history",
-      "description": "Auto-generated GitHub contribution history — tracks and visualizes commit activity across repositories. Stack: GitHub API · Python",
-      "technologies": [],
-      "icon": "fas fa-project-diagram",
-      "github": "https://github.com/shashankthimmegowda/contribution-history",
-      "demo": "https://github.com/shashankthimmegowda/contribution-history"
+      "title": "End-to-End Analytics Pipeline",
+      "description": "Complete modern data stack from raw ingestion to Tableau BI dashboards. Demonstrates best practices across Snowflake for cloud warehousing, dbt for modular SQL transformations, and Tableau for business intelligence reporting.",
+      "technologies": ["SQL", "dbt", "Snowflake", "Tableau", "Python"],
+      "icon": "fas fa-chart-line",
+      "gradient": "linear-gradient(135deg, #f59e0b 0%, #d97706 100%)",
+      "github": "https://github.com/shashankthimmegowda/end-to-end-pipeline-snowflake-dbt-tableau"
     },
     {
-      "title": "realtime-warehousing-with-snowflake",
-      "description": "Real-time data warehousing using Snowflake Streams & Tasks for incremental change propagation, Snowpipe for automated ingestion from S3/Azure Blob, and dynamic warehouse management for cost governance. Stack: SQL · Snowflake · Python",
-      "technologies": [],
-      "icon": "fas fa-project-diagram",
-      "github": "https://github.com/shashankthimmegowda/realtime-warehousing-with-snowflake",
-      "demo": "https://github.com/shashankthimmegowda/realtime-warehousing-with-snowflake"
+      "title": "Real-Time Warehousing with Snowflake",
+      "description": "Real-time data warehousing using Snowflake Streams & Tasks for incremental change propagation, Snowpipe for automated event-driven ingestion from S3/Azure Blob, and dynamic warehouse sizing for cost governance.",
+      "technologies": ["Snowflake", "SQL", "Python", "Snowpipe", "Streams & Tasks"],
+      "icon": "fas fa-bolt",
+      "gradient": "linear-gradient(135deg, #ef4444 0%, #dc2626 100%)",
+      "github": "https://github.com/shashankthimmegowda/realtime-warehousing-with-snowflake"
     },
     {
-      "title": "end-to-end-pipeline-snowflake-dbt-tableau",
-      "description": "Full analytics pipeline from raw ingestion to BI dashboards — Snowflake for cloud warehousing, dbt for modular SQL transformations, and Tableau for business intelligence reporting. Demonstrates the modern data stack end to end. Stack: SQL · dbt · Snowflake · Tableau",
-      "technologies": [],
-      "icon": "fas fa-project-diagram",
-      "github": "https://github.com/shashankthimmegowda/end-to-end-pipeline-snowflake-dbt-tableau",
-      "demo": "https://github.com/shashankthimmegowda/end-to-end-pipeline-snowflake-dbt-tableau"
+      "title": "dbt Jaffle Shop Sandbox",
+      "description": "Open-source dbt learning environment built on a fictional sandwich shop dataset. Covers dbt fundamentals: models, tests, documentation, seeds, and snapshots. A hands-on reference for dbt best practices and workflow patterns.",
+      "technologies": ["SQL", "dbt Core", "Snowflake"],
+      "icon": "fas fa-layer-group",
+      "gradient": "linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)",
+      "github": "https://github.com/shashankthimmegowda/jaffle-shop"
     }
   ]
 }

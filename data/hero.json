@@ -1,50 +1,23 @@
 {
-  "_instructions": "Hero section content - the first thing visitors see on your portfolio.",
   "greeting": "Hi, I'm",
-  "name": "SHASHANK THIMMEGOWDA",
+  "name": "Shashank Thimmegowda",
   "title": "Snowflake Data Engineer",
-  "summary": "Snowflake Data Engineer with 1+ years of experience specializing in Python, SQL, DBT.",
-  "avatarUrl": "/avatar.png",
+  "summary": "Data engineer with <strong>~5 years of experience</strong> designing scalable <strong>ELT/ETL pipelines</strong> on Snowflake. I specialize in <strong>dbt</strong>, <strong>Apache Airflow</strong>, and <strong>Fivetran</strong> — transforming raw data into business-critical insights at enterprise scale.",
   "highlights": [
-    {
-      "icon": "fas fa-briefcase",
-      "text": "Professional Experience"
-    },
-    {
-      "icon": "fas fa-code",
-      "text": "Technical Expertise"
-    },
-    {
-      "icon": "fas fa-users",
-      "text": "Team Collaboration"
-    }
+    { "icon": "fas fa-certificate", "text": "4× SnowPro Certified" },
+    { "icon": "fas fa-database", "text": "100M+ Records Processed" },
+    { "icon": "fas fa-building", "text": "Emburse · TCS · Dess" },
+    { "icon": "fas fa-graduation-cap", "text": "MS Data Science, UMass" }
   ],
   "cta": {
     "buttons": [
-      {
-        "text": "Get In Touch",
-        "href": "#contact",
-        "type": "primary",
-        "external": false
-      },
-      {
-        "text": "View My Work",
-        "href": "#projects",
-        "type": "secondary",
-        "external": false
-      }
+      { "text": "Get In Touch", "href": "#contact", "type": "primary", "external": false },
+      { "text": "View Projects", "href": "#projects", "type": "secondary", "external": false }
     ]
   },
   "socialLinks": [
-    {
-      "platform": "LinkedIn",
-      "url": "https://www.linkedin.com/in/shashank-thimmegowda-97/",
-      "icon": "fab fa-linkedin"
-    },
-    {
-      "platform": "Email",
-      "url": "mailto:shashank.thimmegowda97@gmail.com",
-      "icon": "fas fa-envelope"
-    }
+    { "platform": "LinkedIn", "url": "https://www.linkedin.com/in/shashank-thimmegowda-97/", "icon": "fab fa-linkedin" },
+    { "platform": "GitHub", "url": "https://github.com/shashankthimmegowda", "icon": "fab fa-github" },
+    { "platform": "Email", "url": "mailto:shashank.thimmegowda97@gmail.com", "icon": "fas fa-envelope" }
   ]
 }

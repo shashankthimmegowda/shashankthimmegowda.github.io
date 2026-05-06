@@ -1,6 +1,6 @@
 {
-  "_instructions": "Contact section.",
   "sectionTitle": "Get In Touch",
+  "intro": "Open to senior data engineering roles, consulting, and collaboration. Drop me a message and I'll get back to you within 24 hours.",
   "contactInfo": [
     {
       "type": "email",
@@ -14,7 +14,7 @@
       "icon": "fas fa-phone",
       "label": "Phone",
       "value": "774-636-8886",
-      "href": "tel:7746368886"
+      "href": "tel:+17746368886"
     },
     {
       "type": "location",
@@ -27,36 +27,21 @@
       "type": "linkedin",
       "icon": "fab fa-linkedin",
       "label": "LinkedIn",
-      "value": "in/LinkedIn Profile",
+      "value": "linkedin.com/in/shashank-thimmegowda-97",
       "href": "https://www.linkedin.com/in/shashank-thimmegowda-97/"
     }
   ],
   "form": {
     "fields": [
-      {
-        "id": "name",
-        "type": "text",
-        "placeholder": "Your Name",
-        "required": true
-      },
-      {
-        "id": "email",
-        "type": "email",
-        "placeholder": "Your Email",
-        "required": true
-      },
-      {
-        "id": "message",
-        "type": "textarea",
-        "placeholder": "Your Message",
-        "rows": 5,
-        "required": true
-      }
+      { "id": "name", "type": "text", "placeholder": "Your Name", "required": true },
+      { "id": "email", "type": "email", "placeholder": "Your Email", "required": true },
+      { "id": "subject", "type": "text", "placeholder": "Subject", "required": false },
+      { "id": "message", "type": "textarea", "placeholder": "Your Message", "rows": 5, "required": true }
     ],
     "submitButton": {
       "text": "Send Message",
       "type": "primary"
     },
-    "successMessage": "Thank you for your message!"
+    "successMessage": "Thanks for reaching out! I'll get back to you within 24 hours."
   }
 }

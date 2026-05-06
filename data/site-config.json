@@ -1,13 +1,12 @@
 {
-  "_instructions": "Site-wide configuration and meta tags. Update these values for SEO and branding.",
   "meta": {
-    "title": "SHASHANK THIMMEGOWDA | Snowflake Data Engineer",
-    "description": "SHASHANK THIMMEGOWDA - Snowflake Data Engineer | Portfolio",
-    "author": "SHASHANK THIMMEGOWDA",
-    "keywords": "Snowflake Data Engineer, Portfolio, SHASHANK THIMMEGOWDA"
+    "title": "Shashank Thimmegowda | Snowflake Data Engineer",
+    "description": "Snowflake Data Engineer with 5+ years building ELT pipelines, dbt models, and Airflow orchestration at enterprise scale. SnowPro Advanced Architect & Data Engineer certified.",
+    "author": "Shashank Thimmegowda",
+    "keywords": "Snowflake Data Engineer, dbt, Apache Airflow, Fivetran, ELT Pipeline, Data Engineering, SnowPro Certified, Streamlit, Python, SQL"
   },
   "branding": {
-    "name": "SHASHANK THIMMEGOWDA",
+    "name": "Shashank Thimmegowda",
     "tagline": "Snowflake Data Engineer"
   },
   "settings": {

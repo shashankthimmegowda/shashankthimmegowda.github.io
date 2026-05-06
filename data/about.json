@@ -1,21 +1,14 @@
 {
-  "_instructions": "About section content.",
   "sectionTitle": "About Me",
   "paragraphs": [
-    "Snowflake Data Engineer with ~5 years of experience in designing, optimizing, and managing scalable ETL/ELT data pipelines. Skilled at integrating diverse data sources and transforming raw data into actionable insights."
+    "I'm a Snowflake Data Engineer with ~5 years of experience building production-grade ELT pipelines that power finance, billing, and customer analytics platforms across multiple industries.",
+    "At Emburse, I architected a multi-region revenue analytics platform using Fivetran, dbt (Medallion architecture), and Snowflake — achieving less than 1% discrepancy in billing reconciliation across 3 Snowflake regions. At TCS, I spearheaded cost governance initiatives that cut operational spend by 20%. Earlier at Dess Technologies, I built a Customer 360 platform consolidating 100M+ records from 10+ sources, reducing data processing time by 40%.",
+    "I hold four Snowflake certifications — including SnowPro Advanced Architect and Data Engineer — and a Master's in Data Science from UMass Dartmouth. I'm passionate about clean data models, reliable pipelines, and making data accessible to the business."
   ],
   "statistics": [
-    {
-      "value": "1+",
-      "label": "Years Experience"
-    },
-    {
-      "value": "3+",
-      "label": "Projects Completed"
-    },
-    {
-      "value": "17+",
-      "label": "Technologies"
-    }
+    { "value": "5+", "label": "Years Experience" },
+    { "value": "100M+", "label": "Records Processed" },
+    { "value": "4", "label": "SnowPro Certifications" },
+    { "value": "20%", "label": "Cost Reduction @ TCS" }
   ]
 }
