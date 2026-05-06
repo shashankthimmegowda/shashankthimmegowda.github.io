@@ -239,7 +239,7 @@ ul  { list-style: none; }
   justify-content: center;
   background-color: var(--ink);
   overflow: hidden;
-  padding: 140px 0 80px;
+  padding: 130px 0 80px;
 }
 
 .hero-bg-aurora {
@@ -268,12 +268,20 @@ ul  { list-style: none; }
   100% { transform: translate(0.5%, 1%) scale(1.01); }
 }
 
-.hero-content {
+/* Two-column hero layout */
+.hero-layout {
   position: relative;
   z-index: 1;
-  text-align: center;
-  max-width: 860px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+}
+
+.hero-content {
+  text-align: left;
+  max-width: 680px;
 }
 
 .hero-greeting {
@@ -303,7 +311,7 @@ ul  { list-style: none; }
 .hero-role-wrap {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1rem;
   margin-bottom: 1.5rem;
   opacity: 0;
@@ -334,8 +342,8 @@ ul  { list-style: none; }
   font-size: 1.05rem;
   line-height: 1.8;
   color: var(--on-dark-muted);
-  max-width: 640px;
-  margin: 0 auto 2rem;
+  max-width: 600px;
+  margin: 0 0 2rem;
   opacity: 0;
   animation: fadeSlideUp 0.7s ease 0.8s forwards;
 }
@@ -349,7 +357,7 @@ ul  { list-style: none; }
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 2.5rem;
   opacity: 0;
   animation: fadeSlideUp 0.7s ease 1s forwards;
@@ -387,7 +395,7 @@ ul  { list-style: none; }
 .hero-cta {
   display: flex;
   gap: 1rem;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 2.5rem;
   flex-wrap: wrap;
   opacity: 0;
@@ -438,7 +446,7 @@ ul  { list-style: none; }
 .social-links {
   display: flex;
   gap: 0.75rem;
-  justify-content: center;
+  justify-content: flex-start;
   opacity: 0;
   animation: fadeSlideUp 0.7s ease 1.2s forwards;
 }
@@ -462,6 +470,79 @@ ul  { list-style: none; }
   border-color: var(--teal);
   color: var(--teal);
   transform: translateY(-3px);
+}
+
+/* ==========================================================================
+   Hero Headshot
+   ========================================================================== */
+.hero-photo-wrap {
+  position: relative;
+  flex-shrink: 0;
+  opacity: 0;
+  animation: fadeSlideUp 0.9s ease 0.5s forwards;
+}
+
+.hero-photo-ring {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, var(--teal), var(--gold), var(--teal));
+  background-size: 200% 200%;
+  animation: gradientSpin 4s linear infinite;
+  box-shadow: 0 0 60px rgba(41, 217, 194, 0.25), 0 0 120px rgba(41, 217, 194, 0.1);
+}
+
+@keyframes gradientSpin {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-photo-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--ink);
+  border: 4px solid var(--ink);
+}
+
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.hero-photo-wrap:hover .hero-photo {
+  transform: scale(1.04);
+}
+
+.hero-photo-badge {
+  position: absolute;
+  bottom: 10px;
+  right: -8px;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--teal);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--r-full);
+  box-shadow: 0 4px 16px rgba(41, 217, 194, 0.4);
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+.hero-photo-badge i {
+  font-size: 0.7rem;
 }
 
 .hero-scroll-hint {
@@ -1398,7 +1479,49 @@ ul  { list-style: none; }
   }
 }
 
+@media (max-width: 1024px) {
+  .hero-photo-ring {
+    width: 240px;
+    height: 240px;
+  }
+
+  .hero-layout {
+    gap: 2.5rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .hero-content {
+    text-align: center;
+    order: 2;
+  }
+
+  .hero-photo-wrap {
+    order: 1;
+  }
+
+  .hero-photo-ring {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero-photo-badge {
+    bottom: 4px;
+    right: -4px;
+    font-size: 0.7rem;
+  }
+
+  .hero-role-wrap  { justify-content: center; }
+  .hero-highlights { justify-content: center; }
+  .hero-cta        { justify-content: center; }
+  .social-links    { justify-content: center; }
+
   .nav-menu {
     position: fixed;
     top: 60px;
