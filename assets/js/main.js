@@ -409,15 +409,27 @@ async function loadEducation() {
         if (eduGrid) {
             eduGrid.innerHTML = (data.education || [])
                 .filter(e => !e._instructions)
-                .map(edu => `
+                .map(edu => {
+                    const logoHTML = edu.logo
+                        ? `<img class="edu-logo" src="${edu.logo}" alt="${edu.school} logo"
+                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                           <div class="edu-logo-fallback" style="display:none;background:${edu.logoColor}22;color:${edu.logoColor}">
+                             ${edu.logoInitial || edu.school[0]}
+                           </div>`
+                        : `<div class="edu-logo-fallback" style="background:${(edu.logoColor||'#003DA5')}22;color:${edu.logoColor||'#003DA5'}">
+                             ${edu.logoInitial || edu.school[0]}
+                           </div>`;
+                    return `
                     <div class="education-item reveal-left">
-                        <div>
+                        <div class="edu-logo-wrap">${logoHTML}</div>
+                        <div class="edu-text">
                             <h3 class="education-degree">${edu.degree}</h3>
                             <p class="education-school">${edu.school}</p>
                             ${edu.details ? `<p class="education-details">${edu.details}</p>` : ''}
                         </div>
                         <span class="education-period">${edu.period}</span>
-                    </div>`)
+                    </div>`;
+                })
                 .join('');
         }
 

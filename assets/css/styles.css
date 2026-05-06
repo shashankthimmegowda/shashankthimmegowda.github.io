@@ -1218,6 +1218,39 @@ ul  { list-style: none; }
   line-height: 1.6;
 }
 
+.edu-logo-wrap {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--r-sm);
+  overflow: hidden;
+}
+
+.edu-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--r-sm);
+  display: block;
+}
+
+.edu-logo-fallback {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--r-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.edu-text {
+  flex: 1;
+  min-width: 0;
+}
+
 /* Certifications */
 .cert-section-title {
   font-family: var(--font-display);
@@ -1693,7 +1726,9 @@ ul  { list-style: none; }
   .timeline-logo-wrap { display: none; } /* hide logo on mobile to save space */
 
   /* Education */
-  .education-item { flex-direction: column; gap: 0.5rem; }
+  .education-item { flex-direction: row; flex-wrap: wrap; gap: 0.75rem; }
+  .edu-logo-wrap { width: 48px; height: 48px; }
+  .edu-logo-fallback { font-size: 1.2rem; }
 
   /* Certs */
   .cert-grid { grid-template-columns: 1fr; }

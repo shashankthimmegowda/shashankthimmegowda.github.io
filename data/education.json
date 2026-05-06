@@ -6,13 +6,19 @@
       "degree": "Master's in Data Science",
       "school": "University of Massachusetts Dartmouth",
       "period": "Sep 2023 – May 2025",
-      "details": "Graduate studies in machine learning, statistical modeling, and large-scale data engineering."
+      "details": "Graduate studies in machine learning, statistical modeling, and large-scale data engineering.",
+      "logo": "assets/images/logos/umassd.svg",
+      "logoColor": "#003DA5",
+      "logoInitial": "U"
     },
     {
       "degree": "Bachelor's in Electronics & Communication Engineering",
       "school": "Visvesvaraya Technological University",
       "period": "Aug 2015 – May 2019",
-      "details": ""
+      "details": "",
+      "logo": "assets/images/logos/vtu.svg",
+      "logoColor": "#1A237E",
+      "logoInitial": "V"
     }
   ],
   "certifications": [

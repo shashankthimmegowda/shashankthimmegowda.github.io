@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" rx="16" fill="#003DA5"/>
+  <text x="100" y="82" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="52" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">U</text>
+  <text x="100" y="130" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="22" fill="#C8102E" text-anchor="middle" letter-spacing="3">MASS</text>
+  <text x="100" y="158" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#a0b4d6" text-anchor="middle" letter-spacing="1">DARTMOUTH</text>
+</svg>
