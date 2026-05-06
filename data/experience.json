@@ -5,51 +5,57 @@
     {
       "title": "Data Engineer",
       "company": "Emburse",
+      "logo": "https://logo.clearbit.com/emburse.com",
+      "logoColor": "#5B2D8E",
+      "logoInitial": "E",
       "period": "September 2025 – Present",
-      "location": "",
-      "description": "Developed end-to-end revenue analytics platform using Fivetran for automated data ingestion from Billing Platform APIs and Emburse products, dbt with Medallion architecture, and Snowflake multi-region warehousing. Implemented data consolidation across 3 Snowflake regions to enable precise usage metering. Developed dbt models with incremental logic, snapshots for SCD tracking, and reusable KPIs via Metrics package. Implemented the dbt Semantic Layer, defining semantic models, measures, and dimensions for core revenue and usage KPIs. Orchestrated end-to-end ELT pipelines with Airflow (MWAA). Leveraged Snowflake Dynamic Tables for frequent meter updates. Developed a Streamlit application as a light weight Master Data Management tool. Built Python scripts that generated detailed customer usage reports and reconciled Billing Platform data with Snowflake-calculated metrics.",
+      "location": "Remote",
       "responsibilities": [
         "Developed end-to-end revenue analytics platform using Fivetran for automated data ingestion from Billing Platform APIs and Emburse products, dbt with Medallion architecture, and Snowflake multi-region warehousing",
-        "Implemented data consolidation across 3 Snowflake regions to enable precise usage metering",
+        "Implemented data consolidation across 3 Snowflake regions to enable precise usage metering, supporting less than 1% discrepancy in billing reconciliation",
         "Developed dbt models with incremental logic, snapshots for SCD tracking, and reusable KPIs via Metrics package",
         "Implemented the dbt Semantic Layer, defining semantic models, measures, and dimensions for core revenue and usage KPIs",
-        "Orchestrated end-to-end ELT pipelines with Airflow (MWAA)",
-        "Leveraged Snowflake Dynamic Tables for frequent meter updates",
-        "Developed a Streamlit application as a light weight Master Data Management tool",
+        "Orchestrated end-to-end ELT pipelines with Airflow (MWAA), automating Fivetran ingestion, dbt transformations, and Python reports",
+        "Leveraged Snowflake Dynamic Tables for frequent meter updates, improving data freshness and reducing pipeline overhead",
+        "Developed a Streamlit application as a lightweight Master Data Management tool, enabling business users to manage and validate master data directly in Snowflake",
         "Built Python scripts that generated detailed customer usage reports and reconciled Billing Platform data with Snowflake-calculated metrics"
       ]
     },
     {
       "title": "Snowflake Data Engineer",
       "company": "Tata Consultancy Services",
+      "logo": "https://logo.clearbit.com/tcs.com",
+      "logoColor": "#0066CC",
+      "logoInitial": "T",
       "period": "November 2021 – August 2023",
-      "location": "",
-      "description": "Developed scalable ELT pipelines using Fivetran and DBT, centralizing financial and asset data in Snowflake as a governed Single Source of Truth. Designed Snowflake ingestion patterns using Snowpipe with auto-ingest via S3 and Azure Blob Storage event notifications. Implemented Streams & Tasks framework to build incremental ELT flows. Designed complex SQL transformations and reusable DBT macros with Jinja. Spearheaded cost governance and performance tuning using Snowflake’s Query Profiler and dynamic warehouse management. Utilized Zero-Copy Cloning for rapid provisioning of test environments. Integrated DBT’s generic data testing framework and built DBT snapshots for SCD - Type 2 dimension tracking. Streamlined development with Git-based CI/CD pipelines.",
+      "location": "India",
       "responsibilities": [
         "Developed scalable ELT pipelines using Fivetran and DBT, centralizing financial and asset data in Snowflake as a governed Single Source of Truth",
-        "Designed Snowflake ingestion patterns using Snowpipe with auto-ingest via S3 and Azure Blob Storage event notifications",
-        "Implemented Streams & Tasks framework to build incremental ELT flows",
-        "Designed complex SQL transformations and reusable DBT macros with Jinja",
-        "Spearheaded cost governance and performance tuning using Snowflake’s Query Profiler and dynamic warehouse management",
-        "Utilized Zero-Copy Cloning for rapid provisioning of test environments",
-        "Integrated DBT’s generic data testing framework and built DBT snapshots for SCD - Type 2 dimension tracking",
-        "Streamlined development with Git-based CI/CD pipelines"
+        "Designed Snowflake ingestion patterns using Snowpipe with auto-ingest via S3 and Azure Blob Storage event notifications for near real-time data delivery",
+        "Implemented Streams & Tasks framework to build incremental ELT flows, automating transformations and ensuring continuous propagation of changes",
+        "Designed complex SQL transformations and reusable DBT macros with Jinja, reducing code redundancy",
+        "Spearheaded cost governance and performance tuning using Snowflake's Query Profiler and dynamic warehouse management, cutting operational spend by 20%",
+        "Utilized Zero-Copy Cloning for rapid provisioning of test environments, accelerating feature development",
+        "Integrated DBT's generic data testing framework and built DBT snapshots for SCD Type 2 dimension tracking",
+        "Streamlined development with Git-based CI/CD pipelines; mentored new engineers on Snowflake architecture and modern data stack best practices"
       ]
     },
     {
       "title": "Associate Data Engineer",
-      "company": "Dess Technologies Pvt Ltd",
+      "company": "Dess Technologies",
+      "logo": "https://logo.clearbit.com/desstech.in",
+      "logoColor": "#E85D04",
+      "logoInitial": "D",
       "period": "June 2019 – November 2021",
-      "location": "",
-      "description": "Designed a Customer 360 Data Platform in Snowflake, consolidating 100M+ customer records from 10+ sources using DBT and Fivetran. Built incremental DBT models to unify customer profiles, transforming 5TB of data. Optimized Snowflake query performance using clustering keys and dynamic warehouses. Orchestrated ELT pipelines with Apache Airflow. Integrated social media APIs into Snowflake to support Marketing Mix Modeling. Automated ETL workflows using Airflow with Python Snowflake connectors. Developed aggregated data models to support spend analysis.",
+      "location": "India",
       "responsibilities": [
-        "Designed a Customer 360 Data Platform in Snowflake, consolidating 100M+ customer records from 10+ sources using DBT and Fivetran",
-        "Built incremental DBT models to unify customer profiles, transforming 5TB of data",
-        "Optimized Snowflake query performance using clustering keys and dynamic warehouses",
-        "Orchestrated ELT pipelines with Apache Airflow",
-        "Integrated social media APIs into Snowflake to support Marketing Mix Modeling",
-        "Automated ETL workflows using Airflow with Python Snowflake connectors",
-        "Developed aggregated data models to support spend analysis"
+        "Designed a Customer 360 Data Platform in Snowflake, consolidating 100M+ customer records from 10+ sources using DBT and Fivetran for personalized marketing analytics",
+        "Built incremental DBT models to unify customer profiles, transforming 5TB of data and reducing processing time by 40%",
+        "Optimized Snowflake query performance using clustering keys and dynamic warehouses, ensuring scalable analytics",
+        "Orchestrated ELT pipelines with Apache Airflow, scheduling daily DBT runs and monitoring Fivetran syncs, improving customer segmentation accuracy by 20%",
+        "Integrated social media APIs into Snowflake to support Marketing Mix Modeling and spend analytics",
+        "Automated ETL workflows using Airflow with Python Snowflake connectors and optimized API consumption via dynamic pagination",
+        "Developed aggregated data models to support spend analysis, improving marketing ROI by 15%"
       ]
     }
   ]

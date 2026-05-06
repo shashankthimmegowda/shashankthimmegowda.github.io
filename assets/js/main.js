@@ -272,10 +272,27 @@ async function loadExperience() {
                 ? `<ul>${exp.responsibilities.map(r => `<li>${r}</li>`).join('')}</ul>`
                 : '';
 
+            const logoHTML = exp.logo
+                ? `<img
+                      class="company-logo"
+                      src="${exp.logo}"
+                      alt="${exp.company} logo"
+                      onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+                   />
+                   <div class="company-logo-fallback" style="display:none;background:${exp.logoColor}18;color:${exp.logoColor}">
+                     ${exp.logoInitial || exp.company[0]}
+                   </div>`
+                : `<div class="company-logo-fallback" style="background:${(exp.logoColor||'#29D9C2')}18;color:${exp.logoColor||'#29D9C2'}">
+                     ${exp.logoInitial || exp.company[0]}
+                   </div>`;
+
             el.innerHTML = `
                 <div class="timeline-content">
                     <div class="timeline-header">
-                        <div>
+                        <div class="timeline-logo-wrap">
+                            ${logoHTML}
+                        </div>
+                        <div class="timeline-meta">
                             <h3 class="timeline-title">${exp.title}</h3>
                             <p class="timeline-company">${exp.company}</p>
                         </div>

@@ -634,11 +634,46 @@ ul  { list-style: none; }
 
 .timeline-header {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 1rem;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.timeline-logo-wrap {
+  flex-shrink: 0;
+}
+
+.company-logo {
+  height: 44px;
+  width: auto;
+  max-width: 110px;
+  object-fit: contain;
+  border-radius: var(--r-sm);
+  background: #fff;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  display: block;
+}
+
+.company-logo-fallback {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--r-sm);
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid currentColor;
+  opacity: 0.85;
+}
+
+.timeline-meta {
+  flex: 1;
+  min-width: 0;
 }
 
 .timeline-title {
@@ -666,6 +701,7 @@ ul  { list-style: none; }
   border-radius: var(--r-full);
   white-space: nowrap;
   flex-shrink: 0;
+  align-self: flex-start;
 }
 
 .timeline-description {
