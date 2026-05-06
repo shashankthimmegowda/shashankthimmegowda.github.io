@@ -352,8 +352,15 @@ async function loadProjects() {
             .filter(p => !p._instructions)
             .map(project => {
                 const gradient = project.gradient || 'linear-gradient(135deg, #154D57, #29D9C2)';
+                const icon = project.icon || 'fas fa-code';
                 const badges = (project.technologies || [])
                     .map(t => `<span class="tech-badge">${t}</span>`).join('');
+                const impactHTML = (project.impact || []).map(m => `
+                    <div class="project-impact-item">
+                        <i class="${m.icon}"></i>
+                        <span class="project-impact-value">${m.value}</span>
+                        <span class="project-impact-label">${m.label}</span>
+                    </div>`).join('');
                 const links = [];
                 if (project.github) {
                     links.push(`<a href="${project.github}" target="_blank" rel="noopener" class="project-link">
@@ -367,11 +374,15 @@ async function loadProjects() {
                 }
                 return `
                 <div class="project-card reveal">
-                    <div class="project-image" style="background:${gradient}">
-                        <i class="${project.icon || 'fas fa-code'}"></i>
+                    <div class="project-banner" style="background:${gradient}">
+                        <i class="${icon} project-banner-icon-bg"></i>
+                        <div class="project-banner-icon"><i class="${icon}"></i></div>
+                        ${project.subtitle ? `<span class="project-banner-tag">${project.subtitle}</span>` : ''}
                     </div>
+                    ${impactHTML ? `<div class="project-impact">${impactHTML}</div>` : ''}
                     <div class="project-content">
                         <h3 class="project-title">${project.title}</h3>
+                        ${project.subtitle ? `<p class="project-subtitle">${project.subtitle}</p>` : ''}
                         <p class="project-description">${project.description}</p>
                         <div class="project-tech">${badges}</div>
                         <div class="project-links">${links.join('')}</div>

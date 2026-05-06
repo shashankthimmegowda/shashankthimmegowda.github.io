@@ -3,48 +3,84 @@
   "projects": [
     {
       "title": "Cortex AI + MCP Analytics App",
-      "description": "Natural language analytics powered by Snowflake Cortex AI and the Model Context Protocol. Ask questions in plain English and get SQL-backed answers directly from your Snowflake warehouse — no query writing required.",
-      "technologies": ["Python", "Streamlit", "Snowflake Cortex", "MCP", "SQL"],
+      "subtitle": "Natural Language BI on Snowflake",
+      "description": "Conversational analytics app that lets business users query their Snowflake data warehouse in plain English. Powered by Snowflake Cortex AI for LLM-based SQL generation and the Model Context Protocol (MCP) for tool-augmented responses — zero query writing required.",
+      "technologies": ["Python", "Streamlit", "Snowflake Cortex", "MCP", "SQL", "LLM"],
+      "impact": [
+        { "icon": "fas fa-robot", "label": "AI-Powered", "value": "Cortex LLM" },
+        { "icon": "fas fa-bolt", "label": "Query Mode", "value": "Natural Language" },
+        { "icon": "fas fa-layer-group", "label": "Protocol", "value": "MCP" }
+      ],
       "icon": "fas fa-robot",
       "gradient": "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
       "github": "https://github.com/shashankthimmegowda/streamlit_mcp_cortex"
     },
     {
       "title": "ELT Pipeline: dbt + Snowflake + Airflow",
-      "description": "Production-grade ELT pipeline with Apache Airflow orchestration, dbt Medallion architecture transformations, and Snowflake warehousing. Features incremental models, SCD Type 2 snapshots, and automated daily scheduling via Docker-based Airflow.",
+      "subtitle": "Production-Grade Data Engineering",
+      "description": "End-to-end ELT pipeline modeled after real enterprise workloads. Apache Airflow (MWAA) orchestrates dbt transformations following Medallion architecture across Bronze → Silver → Gold layers in Snowflake, with incremental models, SCD Type 2 snapshots, and Docker-based Airflow setup.",
       "technologies": ["Python", "dbt", "Apache Airflow", "Snowflake", "SQL", "Docker"],
+      "impact": [
+        { "icon": "fas fa-layer-group", "label": "Architecture", "value": "Medallion" },
+        { "icon": "fas fa-history", "label": "Tracking", "value": "SCD Type 2" },
+        { "icon": "fas fa-sync-alt", "label": "Models", "value": "Incremental" }
+      ],
       "icon": "fas fa-stream",
       "gradient": "linear-gradient(135deg, #0ea5e9 0%, #0891b2 100%)",
       "github": "https://github.com/shashankthimmegowda/elt-pipeline-dbt-snowflake-airflow"
     },
     {
       "title": "Snowflake Data Profiler",
-      "description": "Native Streamlit app for interactive data profiling within Snowflake. Schema inspection, column statistics, null analysis, and data quality checks — all running inside Snowflake so data never leaves the warehouse.",
+      "subtitle": "Native Snowflake Analytics App",
+      "description": "Streamlit-in-Snowflake app for deep data profiling — no data ever leaves the warehouse. Delivers instant schema inspection, column-level statistics, null and uniqueness analysis, value distribution charts, and automated data quality scoring across any Snowflake table or view.",
       "technologies": ["Python", "Streamlit", "Snowflake", "SQL"],
+      "impact": [
+        { "icon": "fas fa-shield-alt", "label": "Data Stays In", "value": "Snowflake" },
+        { "icon": "fas fa-chart-bar", "label": "Analysis", "value": "Column-Level" },
+        { "icon": "fas fa-check-circle", "label": "Quality", "value": "Auto-Scored" }
+      ],
       "icon": "fas fa-chart-bar",
       "gradient": "linear-gradient(135deg, #10b981 0%, #059669 100%)",
       "github": "https://github.com/shashankthimmegowda/Data_Profiler_App"
     },
     {
       "title": "End-to-End Analytics Pipeline",
-      "description": "Complete modern data stack from raw ingestion to Tableau BI dashboards. Demonstrates best practices across Snowflake for cloud warehousing, dbt for modular SQL transformations, and Tableau for business intelligence reporting.",
+      "subtitle": "Raw Data → Tableau BI Dashboards",
+      "description": "Complete modern data stack demonstration: raw ingestion → Snowflake cloud warehouse → dbt modular SQL transformations → Tableau business intelligence dashboards. Shows how each layer of the stack connects to power self-serve reporting for stakeholders.",
       "technologies": ["SQL", "dbt", "Snowflake", "Tableau", "Python"],
+      "impact": [
+        { "icon": "fas fa-route", "label": "Layers", "value": "Full Stack" },
+        { "icon": "fas fa-chart-line", "label": "Viz Layer", "value": "Tableau" },
+        { "icon": "fas fa-cube", "label": "Transform", "value": "dbt Models" }
+      ],
       "icon": "fas fa-chart-line",
       "gradient": "linear-gradient(135deg, #f59e0b 0%, #d97706 100%)",
       "github": "https://github.com/shashankthimmegowda/end-to-end-pipeline-snowflake-dbt-tableau"
     },
     {
       "title": "Real-Time Warehousing with Snowflake",
-      "description": "Real-time data warehousing using Snowflake Streams & Tasks for incremental change propagation, Snowpipe for automated event-driven ingestion from S3/Azure Blob, and dynamic warehouse sizing for cost governance.",
+      "subtitle": "Event-Driven Ingestion & CDC",
+      "description": "Real-time data warehousing using Snowflake's native streaming primitives — Streams for change data capture, Tasks for automated trigger-based transformation, and Snowpipe for event-driven ingestion from S3/Azure Blob Storage. Includes dynamic warehouse sizing for cost governance.",
       "technologies": ["Snowflake", "SQL", "Python", "Snowpipe", "Streams & Tasks"],
+      "impact": [
+        { "icon": "fas fa-bolt", "label": "Ingestion", "value": "Event-Driven" },
+        { "icon": "fas fa-infinity", "label": "CDC", "value": "Streams + Tasks" },
+        { "icon": "fas fa-dollar-sign", "label": "Cost", "value": "Dynamic WH" }
+      ],
       "icon": "fas fa-bolt",
       "gradient": "linear-gradient(135deg, #ef4444 0%, #dc2626 100%)",
       "github": "https://github.com/shashankthimmegowda/realtime-warehousing-with-snowflake"
     },
     {
-      "title": "dbt Jaffle Shop Sandbox",
-      "description": "Open-source dbt learning environment built on a fictional sandwich shop dataset. Covers dbt fundamentals: models, tests, documentation, seeds, and snapshots. A hands-on reference for dbt best practices and workflow patterns.",
-      "technologies": ["SQL", "dbt Core", "Snowflake"],
+      "title": "dbt Jaffle Shop",
+      "subtitle": "dbt Best Practices Reference",
+      "description": "Production-ready dbt project built on the open-source Jaffle Shop dataset — a complete reference implementation covering modular model design, generic and singular tests, schema documentation, seeds, snapshots, and environment-based configurations following dbt Labs best practices.",
+      "technologies": ["SQL", "dbt Core", "Snowflake", "YAML"],
+      "impact": [
+        { "icon": "fas fa-book", "label": "Coverage", "value": "Full dbt Suite" },
+        { "icon": "fas fa-vial", "label": "Testing", "value": "Generic + Singular" },
+        { "icon": "fas fa-file-alt", "label": "Docs", "value": "Auto-Generated" }
+      ],
       "icon": "fas fa-layer-group",
       "gradient": "linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)",
       "github": "https://github.com/shashankthimmegowda/jaffle-shop"

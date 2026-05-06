@@ -5,7 +5,7 @@
     {
       "title": "Data Engineer",
       "company": "Emburse",
-      "logo": "https://logo.clearbit.com/emburse.com",
+      "logo": "assets/images/logos/emburse.svg",
       "logoColor": "#5B2D8E",
       "logoInitial": "E",
       "period": "September 2025 – Present",
@@ -24,7 +24,7 @@
     {
       "title": "Snowflake Data Engineer",
       "company": "Tata Consultancy Services",
-      "logo": "https://logo.clearbit.com/tcs.com",
+      "logo": "assets/images/logos/tcs.png",
       "logoColor": "#0066CC",
       "logoInitial": "T",
       "period": "November 2021 – August 2023",
@@ -43,7 +43,7 @@
     {
       "title": "Associate Data Engineer",
       "company": "Dess Technologies",
-      "logo": "https://logo.clearbit.com/desstech.in",
+      "logo": "assets/images/logos/dess.png",
       "logoColor": "#E85D04",
       "logoInitial": "D",
       "period": "June 2019 – November 2021",
