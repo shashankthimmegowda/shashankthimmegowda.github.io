@@ -1,0 +1,18 @@
+{
+  "profile": {
+    "name": "SHASHANK THIMMEGOWDA",
+    "title": "Snowflake Data Engineer",
+    "bio": "Snowflake Data Engineer with ~5 years of experience in designing, optimizing, and managing scalable ETL/ELT data pipelines. Skilled at integrating diverse data sources and transforming raw data into actionable insights."
+  },
+  "contact": {
+    "email": "shashank.thimmegowda97@gmail.com",
+    "phone": "774-636-8886",
+    "githubUsername": "shashankthimmegowda",
+    "linkedin": "https://www.linkedin.com/in/shashank-thimmegowda-97/"
+  },
+  "siteConfig": {
+    "domain": "",
+    "title": "SHASHANK THIMMEGOWDA - Portfolio",
+    "description": "Snowflake Data Engineer with ~5 years of experience in designing, optimizing, and managing scalable ETL/ELT data pipelines. Skilled at integrating diverse data sources and transforming raw data into actionable insights."
+  }
+}

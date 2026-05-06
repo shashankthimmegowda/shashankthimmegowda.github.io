@@ -1,0 +1,18 @@
+{
+  "_instructions": "Site-wide configuration and meta tags. Update these values for SEO and branding.",
+  "meta": {
+    "title": "SHASHANK THIMMEGOWDA | Snowflake Data Engineer",
+    "description": "SHASHANK THIMMEGOWDA - Snowflake Data Engineer | Portfolio",
+    "author": "SHASHANK THIMMEGOWDA",
+    "keywords": "Snowflake Data Engineer, Portfolio, SHASHANK THIMMEGOWDA"
+  },
+  "branding": {
+    "name": "SHASHANK THIMMEGOWDA",
+    "tagline": "Snowflake Data Engineer"
+  },
+  "settings": {
+    "year": 2026,
+    "enableAnimations": true,
+    "navbarScrollEffect": true
+  }
+}

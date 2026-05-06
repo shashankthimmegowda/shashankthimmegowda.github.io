@@ -1,0 +1,62 @@
+{
+  "_instructions": "Add your projects here. Each project should showcase your work.",
+  "sectionTitle": "Featured Projects",
+  "projects": [
+    {
+      "title": "streamlit_mcp_cortex",
+      "description": "Streamlit app powered by Snowflake Cortex AI and MCP (Model Context Protocol) for natural language querying and AI-driven analytics directly in Snowflake. Stack: Python · Streamlit · Snowflake Cortex · MCP",
+      "technologies": [
+        "Python"
+      ],
+      "icon": "fas fa-project-diagram",
+      "github": "https://github.com/shashankthimmegowda/streamlit_mcp_cortex",
+      "demo": "https://github.com/shashankthimmegowda/streamlit_mcp_cortex"
+    },
+    {
+      "title": "elt-pipeline-dbt-snowflake-airflow",
+      "description": "End-to-end ELT pipeline with Apache Airflow for orchestration, dbt (Medallion architecture) for SQL transformations, and Snowflake as the cloud data warehouse. Features incremental models, SCD Type 2 snapshots, and automated scheduling. Stack: Python · dbt · Airflow · Snowflake · SQL",
+      "technologies": [
+        "HTML",
+        "Python",
+        "Dockerfile"
+      ],
+      "icon": "fas fa-brain",
+      "github": "https://github.com/shashankthimmegowda/elt-pipeline-dbt-snowflake-airflow",
+      "demo": "https://github.com/shashankthimmegowda/elt-pipeline-dbt-snowflake-airflow"
+    },
+    {
+      "title": "Data_Profiler_App",
+      "description": "Native Streamlit app for interactive data profiling and exploration within Snowflake — schema inspection, column statistics, null analysis, and data quality checks. Stack: Python · Streamlit · Snowflake",
+      "technologies": [
+        "Python"
+      ],
+      "icon": "fas fa-project-diagram",
+      "github": "https://github.com/shashankthimmegowda/Data_Profiler_App",
+      "demo": "https://github.com/shashankthimmegowda/Data_Profiler_App"
+    },
+    {
+      "title": "contribution-history",
+      "description": "Auto-generated GitHub contribution history — tracks and visualizes commit activity across repositories. Stack: GitHub API · Python",
+      "technologies": [],
+      "icon": "fas fa-project-diagram",
+      "github": "https://github.com/shashankthimmegowda/contribution-history",
+      "demo": "https://github.com/shashankthimmegowda/contribution-history"
+    },
+    {
+      "title": "realtime-warehousing-with-snowflake",
+      "description": "Real-time data warehousing using Snowflake Streams & Tasks for incremental change propagation, Snowpipe for automated ingestion from S3/Azure Blob, and dynamic warehouse management for cost governance. Stack: SQL · Snowflake · Python",
+      "technologies": [],
+      "icon": "fas fa-project-diagram",
+      "github": "https://github.com/shashankthimmegowda/realtime-warehousing-with-snowflake",
+      "demo": "https://github.com/shashankthimmegowda/realtime-warehousing-with-snowflake"
+    },
+    {
+      "title": "end-to-end-pipeline-snowflake-dbt-tableau",
+      "description": "Full analytics pipeline from raw ingestion to BI dashboards — Snowflake for cloud warehousing, dbt for modular SQL transformations, and Tableau for business intelligence reporting. Demonstrates the modern data stack end to end. Stack: SQL · dbt · Snowflake · Tableau",
+      "technologies": [],
+      "icon": "fas fa-project-diagram",
+      "github": "https://github.com/shashankthimmegowda/end-to-end-pipeline-snowflake-dbt-tableau",
+      "demo": "https://github.com/shashankthimmegowda/end-to-end-pipeline-snowflake-dbt-tableau"
+    }
+  ]
+}

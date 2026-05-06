@@ -1,0 +1,56 @@
+{
+  "_instructions": "Add your work experience here. Copy the experience object for each job.",
+  "sectionTitle": "Professional Experience",
+  "experiences": [
+    {
+      "title": "Data Engineer",
+      "company": "Emburse",
+      "period": "September 2025 – Present",
+      "location": "",
+      "description": "Developed end-to-end revenue analytics platform using Fivetran for automated data ingestion from Billing Platform APIs and Emburse products, dbt with Medallion architecture, and Snowflake multi-region warehousing. Implemented data consolidation across 3 Snowflake regions to enable precise usage metering. Developed dbt models with incremental logic, snapshots for SCD tracking, and reusable KPIs via Metrics package. Implemented the dbt Semantic Layer, defining semantic models, measures, and dimensions for core revenue and usage KPIs. Orchestrated end-to-end ELT pipelines with Airflow (MWAA). Leveraged Snowflake Dynamic Tables for frequent meter updates. Developed a Streamlit application as a light weight Master Data Management tool. Built Python scripts that generated detailed customer usage reports and reconciled Billing Platform data with Snowflake-calculated metrics.",
+      "responsibilities": [
+        "Developed end-to-end revenue analytics platform using Fivetran for automated data ingestion from Billing Platform APIs and Emburse products, dbt with Medallion architecture, and Snowflake multi-region warehousing",
+        "Implemented data consolidation across 3 Snowflake regions to enable precise usage metering",
+        "Developed dbt models with incremental logic, snapshots for SCD tracking, and reusable KPIs via Metrics package",
+        "Implemented the dbt Semantic Layer, defining semantic models, measures, and dimensions for core revenue and usage KPIs",
+        "Orchestrated end-to-end ELT pipelines with Airflow (MWAA)",
+        "Leveraged Snowflake Dynamic Tables for frequent meter updates",
+        "Developed a Streamlit application as a light weight Master Data Management tool",
+        "Built Python scripts that generated detailed customer usage reports and reconciled Billing Platform data with Snowflake-calculated metrics"
+      ]
+    },
+    {
+      "title": "Snowflake Data Engineer",
+      "company": "Tata Consultancy Services",
+      "period": "November 2021 – August 2023",
+      "location": "",
+      "description": "Developed scalable ELT pipelines using Fivetran and DBT, centralizing financial and asset data in Snowflake as a governed Single Source of Truth. Designed Snowflake ingestion patterns using Snowpipe with auto-ingest via S3 and Azure Blob Storage event notifications. Implemented Streams & Tasks framework to build incremental ELT flows. Designed complex SQL transformations and reusable DBT macros with Jinja. Spearheaded cost governance and performance tuning using Snowflake’s Query Profiler and dynamic warehouse management. Utilized Zero-Copy Cloning for rapid provisioning of test environments. Integrated DBT’s generic data testing framework and built DBT snapshots for SCD - Type 2 dimension tracking. Streamlined development with Git-based CI/CD pipelines.",
+      "responsibilities": [
+        "Developed scalable ELT pipelines using Fivetran and DBT, centralizing financial and asset data in Snowflake as a governed Single Source of Truth",
+        "Designed Snowflake ingestion patterns using Snowpipe with auto-ingest via S3 and Azure Blob Storage event notifications",
+        "Implemented Streams & Tasks framework to build incremental ELT flows",
+        "Designed complex SQL transformations and reusable DBT macros with Jinja",
+        "Spearheaded cost governance and performance tuning using Snowflake’s Query Profiler and dynamic warehouse management",
+        "Utilized Zero-Copy Cloning for rapid provisioning of test environments",
+        "Integrated DBT’s generic data testing framework and built DBT snapshots for SCD - Type 2 dimension tracking",
+        "Streamlined development with Git-based CI/CD pipelines"
+      ]
+    },
+    {
+      "title": "Associate Data Engineer",
+      "company": "Dess Technologies Pvt Ltd",
+      "period": "June 2019 – November 2021",
+      "location": "",
+      "description": "Designed a Customer 360 Data Platform in Snowflake, consolidating 100M+ customer records from 10+ sources using DBT and Fivetran. Built incremental DBT models to unify customer profiles, transforming 5TB of data. Optimized Snowflake query performance using clustering keys and dynamic warehouses. Orchestrated ELT pipelines with Apache Airflow. Integrated social media APIs into Snowflake to support Marketing Mix Modeling. Automated ETL workflows using Airflow with Python Snowflake connectors. Developed aggregated data models to support spend analysis.",
+      "responsibilities": [
+        "Designed a Customer 360 Data Platform in Snowflake, consolidating 100M+ customer records from 10+ sources using DBT and Fivetran",
+        "Built incremental DBT models to unify customer profiles, transforming 5TB of data",
+        "Optimized Snowflake query performance using clustering keys and dynamic warehouses",
+        "Orchestrated ELT pipelines with Apache Airflow",
+        "Integrated social media APIs into Snowflake to support Marketing Mix Modeling",
+        "Automated ETL workflows using Airflow with Python Snowflake connectors",
+        "Developed aggregated data models to support spend analysis"
+      ]
+    }
+  ]
+}

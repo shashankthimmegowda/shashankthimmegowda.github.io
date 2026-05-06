@@ -1,0 +1,49 @@
+{
+  "_instructions": "Add your education and certifications here.",
+  "sectionTitle": "Education & Certifications",
+  "certificationsTitle": "Certifications",
+  "education": [
+    {
+      "degree": "Master’s",
+      "school": "University of Massachusetts Dartmouth, MA",
+      "institution": "University of Massachusetts Dartmouth, MA",
+      "period": "Sep 2023 – May 2025",
+      "details": "",
+      "description": ""
+    },
+    {
+      "degree": "Bachelors",
+      "school": "Visvesvaraya Technological University",
+      "institution": "Visvesvaraya Technological University",
+      "period": "Aug 2015 – May 2019",
+      "details": "",
+      "description": ""
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Snowflake SnowPro Advanced: Architect",
+      "issuer": "Snowflake"
+    },
+    {
+      "name": "SnowPro Advanced: Data Engineer",
+      "issuer": "Snowflake"
+    },
+    {
+      "name": "SnowPro Specialty: Gen AI",
+      "issuer": "Snowflake"
+    },
+    {
+      "name": "SnowPro Core",
+      "issuer": "Snowflake"
+    },
+    {
+      "name": "DBT Fundamentals",
+      "issuer": "dbt Labs"
+    },
+    {
+      "name": "Azure Data Fundamentals",
+      "issuer": "Microsoft"
+    }
+  ]
+}

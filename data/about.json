@@ -1,0 +1,21 @@
+{
+  "_instructions": "About section content.",
+  "sectionTitle": "About Me",
+  "paragraphs": [
+    "Snowflake Data Engineer with ~5 years of experience in designing, optimizing, and managing scalable ETL/ELT data pipelines. Skilled at integrating diverse data sources and transforming raw data into actionable insights."
+  ],
+  "statistics": [
+    {
+      "value": "1+",
+      "label": "Years Experience"
+    },
+    {
+      "value": "3+",
+      "label": "Projects Completed"
+    },
+    {
+      "value": "17+",
+      "label": "Technologies"
+    }
+  ]
+}
