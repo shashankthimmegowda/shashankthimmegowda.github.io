@@ -1581,64 +1581,29 @@ ul  { list-style: none; }
 }
 
 /* ==========================================================================
-   Responsive
+   Responsive — ordered largest → smallest
    ========================================================================== */
-@media (max-width: 900px) {
-  .about-stats {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
-  .contact-content {
-    grid-template-columns: 1fr;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
+/* ── Tablet / small laptop ─────────────────────────────── max 1024px ── */
 @media (max-width: 1024px) {
-  .hero-photo-ring {
-    width: 240px;
-    height: 240px;
-  }
-
-  .hero-layout {
-    gap: 2.5rem;
-  }
+  .hero-layout     { gap: 2.5rem; }
+  .hero-photo-ring { width: 240px; height: 240px; }
 }
 
+/* ── Tablet portrait ───────────────────────────────────── max 900px ─── */
+@media (max-width: 900px) {
+  .about-stats     { grid-template-columns: repeat(2, 1fr); }
+  .contact-content { grid-template-columns: 1fr; }
+  .projects-grid   { grid-template-columns: 1fr; }
+
+  .timeline-header { flex-wrap: wrap; gap: 0.75rem; }
+  .timeline-period { order: -1; } /* date moves above title */
+}
+
+/* ── Mobile landscape / large phones ──────────────────── max 768px ─── */
 @media (max-width: 768px) {
-  .hero-layout {
-    grid-template-columns: 1fr;
-    text-align: center;
-    justify-items: center;
-  }
-
-  .hero-content {
-    text-align: center;
-    order: 2;
-  }
-
-  .hero-photo-wrap {
-    order: 1;
-  }
-
-  .hero-photo-ring {
-    width: 200px;
-    height: 200px;
-  }
-
-  .hero-photo-badge {
-    bottom: 4px;
-    right: -4px;
-    font-size: 0.7rem;
-  }
-
-  .hero-role-wrap  { justify-content: center; }
-  .hero-highlights { justify-content: center; }
-  .hero-cta        { justify-content: center; }
-  .social-links    { justify-content: center; }
+  /* Nav */
+  .nav-toggle { display: flex; }
 
   .nav-menu {
     position: fixed;
@@ -1648,13 +1613,15 @@ ul  { list-style: none; }
     flex-direction: column;
     background: rgba(10, 22, 40, 0.98);
     backdrop-filter: blur(20px);
-    padding: 1.5rem;
-    gap: 0.5rem;
-    transform: translateY(-100%);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 1.25rem 1.5rem 1.75rem;
+    gap: 0.25rem;
+    transform: translateY(-110%);
     opacity: 0;
     pointer-events: none;
-    transition: all var(--ease-normal);
+    transition: transform var(--ease-normal), opacity var(--ease-normal);
     border-bottom: 1px solid rgba(41, 217, 194, 0.15);
+    z-index: 999;
   }
 
   .nav-menu.active {
@@ -1663,39 +1630,155 @@ ul  { list-style: none; }
     pointer-events: auto;
   }
 
-  .nav-toggle { display: flex; }
-
   .nav-link {
     padding: 0.75rem 1rem;
     border-radius: var(--r-sm);
     font-size: 1rem;
+    text-align: left;
   }
 
-  .hero { padding: 120px 0 100px; }
+  /* Hero — stack photo above text */
+  .hero {
+    padding: 90px 0 60px;
+    min-height: auto;           /* don't force full-screen when stacked */
+  }
 
-  .hero-subtitle { white-space: normal; }
+  .hero-layout {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 2rem;
+  }
 
-  .hero-role-line { display: none; }
+  .hero-content {
+    text-align: center;
+    order: 2;
+    max-width: 100%;
+  }
 
-  .hero-cta { flex-direction: column; align-items: center; }
+  .hero-photo-wrap { order: 1; }
 
-  .timeline { padding-left: 32px; }
+  .hero-photo-ring {
+    width: 160px;
+    height: 160px;
+  }
 
-  .timeline::before { left: 8px; }
+  .hero-photo-badge {
+    bottom: 2px;
+    right: -6px;
+    font-size: 0.68rem;
+    padding: 0.35rem 0.7rem;
+  }
 
-  .timeline-item::before { left: -26px; }
+  .hero-role-line   { display: none; }
+  .hero-role-wrap   { justify-content: center; }
+  .hero-highlights  { justify-content: center; }
+  .hero-cta         { justify-content: center; flex-direction: column; align-items: center; }
+  .social-links     { justify-content: center; }
+  .hero-subtitle    { white-space: normal; text-align: center; }
 
-  .education-item { flex-direction: column; }
+  .hero-description {
+    font-size: 0.95rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  /* Sections */
+  .section-title { font-size: 1.85rem; margin-bottom: 2.5rem; }
+
+  /* Timeline */
+  .timeline          { padding-left: 28px; }
+  .timeline::before  { left: 7px; }
+  .timeline-item::before { left: -23px; width: 10px; height: 10px; }
+  .timeline-content  { padding: 1.25rem; }
+  .timeline-logo-wrap { display: none; } /* hide logo on mobile to save space */
+
+  /* Education */
+  .education-item { flex-direction: column; gap: 0.5rem; }
+
+  /* Certs */
   .cert-grid { grid-template-columns: 1fr; }
+
+  /* About stats */
+  .about-stats { grid-template-columns: repeat(2, 1fr); gap: 0.875rem; }
+  .stat-item   { padding: 1.25rem 0.75rem; }
+  .stat-item h3 { font-size: 1.75rem; }
+
+  /* Contact intro spacing */
+  .contact-intro { margin-top: -1.5rem; }
+
+  /* Footer */
+  .footer .container { flex-direction: column; align-items: center; text-align: center; }
 }
 
-@media (max-width: 560px) {
-  .about-stats { grid-template-columns: repeat(2, 1fr); }
+/* ── Mobile portrait / small phones ───────────────────── max 500px ─── */
+@media (max-width: 500px) {
+  :root {
+    --space-xl: 4.5rem;
+    --space-lg: 2.5rem;
+  }
 
+  /* Hero */
+  .hero          { padding: 80px 0 50px; }
+  .hero-greeting { font-size: 0.8rem; }
+  .hero-photo-ring { width: 130px; height: 130px; }
+  .hero-photo-badge { display: none; } /* too cramped at this size */
+
+  /* Highlights: 2-column grid instead of wrapping flex */
+  .hero-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .highlight-item {
+    justify-content: center;
+    padding: 0.5rem 0.6rem;
+    border-radius: var(--r-md);
+  }
+
+  .highlight-item span { font-size: 0.73rem; }
+
+  /* CTAs: full width */
+  .hero-cta .btn {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+
+  /* Typography */
+  .section-title  { font-size: 1.65rem; }
+  .hero-subtitle  { font-size: 1rem; }
+  .hero-description { font-size: 0.9rem; }
+
+  /* About stats: keep 2 col */
+  .stat-item h3 { font-size: 1.5rem; }
+  .stat-item p  { font-size: 0.72rem; }
+
+  /* Skills: single col */
   .skills-grid { grid-template-columns: 1fr; }
 
-  .hero-title { letter-spacing: -0.03em; }
+  /* Timeline */
+  .timeline-title { font-size: 1.1rem; }
+  .timeline-company { font-size: 0.85rem; }
 
-  .stat-item h3 { font-size: 1.875rem; }
+  /* Project cards */
+  .project-banner      { height: 130px; }
+  .project-banner-icon { width: 42px; height: 42px; font-size: 1.1rem; }
+  .project-banner-tag  { font-size: 0.6rem; }
+  .project-impact-value { font-size: 0.72rem; }
+  .project-impact-label { font-size: 0.58rem; }
+  .project-content      { padding: 1.25rem; }
+
+  /* Contact form */
+  .contact-form-container { padding: 1.25rem; }
+
+  /* Back to top */
+  .back-to-top { bottom: 1.25rem; right: 1.25rem; width: 38px; height: 38px; font-size: 0.85rem; }
+}
+
+/* ── Very small phones ─────────────────────────────────── max 380px ─── */
+@media (max-width: 380px) {
+  .hero-highlights { grid-template-columns: 1fr; }
+  .about-stats     { grid-template-columns: 1fr; }
+  .hero-photo-ring { width: 110px; height: 110px; }
 }
